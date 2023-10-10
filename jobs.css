@@ -1,0 +1,323 @@
+.job-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    font-family: 'League Spartan', sans-serif;
+}
+.left {
+    display: flex;
+    width: 60%;
+    float: left;
+
+}
+
+.job {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.job .job-logo {
+    width: 100px;
+    height: 100px;
+    margin-right: 1rem;
+}
+
+.job .job-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.job .job-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+}
+
+.job .job-details .company-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #388fa4;
+    padding-right: 10px;
+}
+
+.job .job-details .featured-job {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.job .job-details .new-job {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #388fa4;
+    padding: 2px 5px;
+    border-radius: 7px;
+}
+
+.job .job-position {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.job .job-position .time-contract-location
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #8c8a8a;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+
+.job .job-position .time-contract-location .posted-at {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.job .job-position .time-contract-location .contract {
+    margin-right: 20px;
+}
+
+.right {    
+    height: 100%;
+    width: 40%;
+    float: right;
+    justify-content: center;
+}
+
+.div-for-rllt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+
+}
+
+
+.job .role-level-languages-tools button{
+    font-size: 12px;
+    font-weight: bold;
+    color: #388fa4;
+    background-color: #e7f9fa;
+    padding: 4px 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+    border: none;
+}
+
+.job .role-level-languages-tools button:hover {
+    background-color: #388fa4;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.job .delete-button {
+    display: flex;
+    justify-content: center;
+    background-color: #3d3d3d;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #ffffff;
+    float: right;
+    padding: 3px 7px;
+
+}
+
+.job .delete-button:hover {
+    background-color: #000000;
+}
+
+.job .view-button {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #000000;
+    padding: 3px 7px;
+    margin-right: 10px;
+}
+
+.job .view-button:hover {
+    color: #2e2e2e;
+    text-decoration: underline;
+}
+
+.popup-job {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    width: 30%;
+    height: auto;
+    background: rgba(214, 214, 214, 0.914);
+    justify-content: center;
+    border: #000000 solid 1px;
+    border-radius: 5px;
+    padding: 20px;
+    font-family: 'League Spartan', sans-serif;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5);
+}
+
+.popup-job img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+}
+
+.popup-job .popup-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 70%;
+}
+
+.popup-job .company-name {
+    font-size: 14px;
+    font-weight: bold;
+    color: #388fa4;
+    padding-right: 10px;
+}
+
+.popup-job .job-position {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 10px;
+}
+
+.popup-job .job-position .time-contract-location
+{
+    font-size: 14px;
+    font-weight: bold;
+    color: #8c8a8a;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+}
+
+.popup-job .job-position .time-contract-location .posted-at {
+    list-style-type: none;
+    margin-right: 20px;
+}
+
+.popup-job .job-position .time-contract-location .contract {
+    margin-right: 20px;
+}
+
+.popup-job .featured-job {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: black;
+    padding: 2px 5px;
+    border-radius: 7px;
+    margin-left: 10px;
+}
+
+.popup-job .new-job {
+    font-size: 12px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #388fa4;
+    padding: 2px 5px;
+    border-radius: 7px;
+}
+
+.popup-job .role-level-languages-tools button{
+    font-size: 12px;
+    font-weight: bold;
+    color: #388fa4;
+    background-color: #e7f9fa;
+    padding: 4px 5px;
+    border-radius: 2px;
+    margin-right: 10px;
+    border: none;
+}
+
+.popup-job .close-button {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    border: 1px solid #ffffff;
+    cursor: pointer;
+    border-radius: 50px;
+    color: #000000;
+    padding: 3px 7px;
+    margin-right: 10px;
+    float: right;
+}
+
+@media screen and (max-width:950px)
+{
+    .job .view-button {
+        float: right;
+    }
+}
+
+@media screen and (min-width:375px) and (max-width: 768px) {
+    .job-container {
+        width: 100%;
+        margin: 0 auto;
+        align-items: center;
+        background-color: #b5f1f0;
+    }
+    .job {
+        background-color: #ffffff;
+        flex-direction: column;
+        font-size: 10px;
+        padding: 10px;
+        width: 90%;
+    }
+
+    .left {
+        width: 100%;
+    }
+
+    .right {
+        width: 100%;
+        float: left;
+
+    }
+
+    .job .job-details {
+        width: 100%;
+    }
+
+    .job .role-level-languages-tools button {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+
+    .job .delete-button {
+        float: right;
+    }
+
+    .job .view-button {
+        float: left;
+    }
+
+    .popup-job {
+        width: 80%;
+        left: 10%;
+    }
+}
